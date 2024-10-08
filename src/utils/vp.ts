@@ -27,6 +27,7 @@ export async function getVp(
   space: string,
   delegation?: boolean
 ) {
+  console.log('getvp==================================');
   const networks = [...new Set(strategies.map((s) => s.network || network))];
   const snapshots = await getSnapshots(
     network,
